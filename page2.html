@@ -1,0 +1,31 @@
+<body>
+  <h1>
+    Page 2
+  </h1>
+  <p>
+    <a href="./">
+      Link to index page
+    </a>
+  </p>
+  <button id="button1" onclick="example()">
+    Click me to turn blue!
+  </button>
+</body>
+
+<script>
+  var flag = true;
+
+  function example(){
+    if (flag){
+	document.getElementById("button1").style.background = "blue";
+	document.getElementById("button1").style.color = "orange";
+	document.getElementById("button1").innerHTML = "Click me to turn back!";
+      	flag = false;
+    } else {
+	document.getElementById("button1").style.background = "whitesmoke";
+	document.getElementById("button1").style.color = "black";
+      	document.getElementById("button1").innerHTML = "Click me to turn blue!";
+      	flag = true;
+    }
+  }
+</script>
