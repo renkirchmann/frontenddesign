@@ -22,7 +22,7 @@
     
   </p>
   <button id="button1" onclick="example()">
-    Click me to turn blue!
+    Click to like this page!
   </button>
 </body>
 
@@ -31,14 +31,14 @@
 
   function example(){
     if (flag){
-	document.getElementById("button1").style.background = "blue";
-	document.getElementById("button1").style.color = "orange";
-	document.getElementById("button1").innerHTML = "Click me to turn back!";
+	document.getElementById("button1").style.background = "green";
+	document.getElementById("button1").style.color = "white";
+	document.getElementById("button1").innerHTML = "Click to unlike this page!";
       	flag = false;
     } else {
 	document.getElementById("button1").style.background = "whitesmoke";
 	document.getElementById("button1").style.color = "black";
-      	document.getElementById("button1").innerHTML = "Click me to turn blue!";
+      	document.getElementById("button1").innerHTML = "Click to like this page!";
       	flag = true;
     }
   }
