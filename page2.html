@@ -7,8 +7,10 @@
       Link to index page
     </a>
   </p>
-  <button id="button1" onclick="example()">
-    Click me to turn blue!
+  
+	  <input type="image" src="https://www.pngkit.com/png/detail/562-5623618_youtube-thumbs-up-symbol-thumbs-up-line-icon.png" alt="Submit" width="24" height="24">
+  </button id="button1" onclick="example()">>
+     LIKE this page
   </button>
 </body>
 
@@ -17,14 +19,39 @@
 
   function example(){
     if (flag){
-	document.getElementById("button1").style.background = "blue";
-	document.getElementById("button1").style.color = "orange";
-	document.getElementById("button1").innerHTML = "Click me to turn back!";
+	document.getElementById("button1").style.background = "green";
+	document.getElementById("button1").style.color = "white";
+	document.getElementById("button1").innerHTML = "UNLIKE this page!";
       	flag = false;
     } else {
 	document.getElementById("button1").style.background = "whitesmoke";
 	document.getElementById("button1").style.color = "black";
-      	document.getElementById("button1").innerHTML = "Click me to turn blue!";
+      	document.getElementById("button1").innerHTML = "LIKE this page!";
+      	flag = true;
+    }
+  }
+</script>
+
+</p>
+	<input type="image" src="https://cdn.iconscout.com/icon/free/png-256/thumbs-down-12-616177.png" alt="Submit" width="24" height="24">
+  <button id="button2" onclick="example1()">
+    DISLIKE this page!
+  </button>
+</body>
+
+<script>
+  var flag = true;
+
+  function example1(){
+    if (flag){
+	document.getElementById("button2").style.background = "red";
+	document.getElementById("button2").style.color = "white";
+	document.getElementById("button2").innerHTML = "UNDISLIKE this page!";
+      	flag = false;
+    } else {
+	document.getElementById("button2").style.background = "whitesmoke";
+	document.getElementById("button2").style.color = "black";
+      	document.getElementById("button2").innerHTML = "DISLIKE this page!";
       	flag = true;
     }
   }
@@ -34,7 +61,7 @@
 
     <p>
       <input type="text" id="textinput" size="50"/>
-      <label for="textinput"><br>your message will auto-submit</label>
+      <label for="textinput"><br>your message will auto-submit, remember to be nice</label>
     </p>
 
 <p>
